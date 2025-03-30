@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def HelloWorld():
-    return "Hello World"
+    return "backend is running!"
 
 @app.route('/api', methods=['GET'])
 def api():
@@ -18,5 +18,4 @@ def api():
     return jsonify(data)
 
 if __name__ == '__main__':
-
-    app.run(host='0.0.0.0', port=8000,debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
